@@ -1,0 +1,27 @@
+:root {
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-border: #e5e7eb;
+  --color-primary: #374EE4;         
+  --color-primary-hover: #2b3fc4;
+  --header-gradient: linear-gradient(90deg, #9DB1D2 12.02%, #8CB6FB 49.52%, #ADACAA 88.94%);
+
+ 
+  --font-main: 'Georgia', sans-serif;
+  --font-partners: 'Montserrat', sans-serif;
+
+  /* Сетка / контейнер */
+  --frame-width: 1170px;
+  --container-padding: 16px;
+
+  /* Хедер */
+  --nav-panel-height: 138px;
+  --header-height: 65px;
+  --header-radius: 15px;
+
+  /* Отступы и радиусы */
+  --space-2: 8px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --radius: 15px;
+}

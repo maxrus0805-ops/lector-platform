@@ -1,0 +1,40 @@
+.card {
+  width: 427px; /* Из макета */
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #000;
+  font-family: var(--font-partners);
+  font-weight: 500;
+}
+
+.topRow {
+  display: flex;
+  align-items: flex-end; /* Стрелка должна быть на уровне низа логотипа */
+  gap: 16px; /* Отступ между лого и стрелкой */
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 222px;
+  height: 93px;
+  object-fit: contain;
+}
+
+.arrow {
+  font-family: var(--font-partners);
+  font-weight: 500;
+  font-size: 128px;
+  line-height: 1; /* Чтобы стрелка не раздувала блок по высоте */
+  color: #000;
+  margin-bottom: -10px; /* Небольшая коррекция */
+  transition: color 0.2s;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.card:hover .arrow { color: var(--color-primary); }

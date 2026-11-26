@@ -1,0 +1,79 @@
+.hero {
+  width: 1170px;
+  max-width: 100%;
+  min-height: 447px;
+  margin: 24px auto 0;
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  position: relative;
+  padding: 73px 24px 24px 24px;
+}
+
+.photo {
+  width: 472px;
+  height: 317px;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-family: var(--font-main);
+  border-radius: 8px;
+}
+
+.content {
+  position: absolute;
+  top: 73px; 
+  left: 508px;
+  width: 586px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.text {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #000000;
+  margin: 0;
+}
+
+
+.actions {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* .features, .featureItem, .featureIcon — удалить, они больше не используются */
+
+
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  background: #f3f4f6;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.featureIcon {
+  color: #10b981; 
+  font-weight: bold;
+}
+
+@media (max-width: 1170px) {
+  .hero { width: 100%; padding: 24px; min-height: auto; }
+  .photo { width: 100%; height: auto; aspect-ratio: 472 / 317; margin-bottom: 24px; }
+  .content { position: static; width: 100%; }
+  .text { font-size: 24px; }
+}

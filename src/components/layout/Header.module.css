@@ -1,0 +1,112 @@
+/* Контейнер навигационной панели */
+.navPanel {
+  max-width: 1159px;
+  min-height: 138px;
+  margin: 14px auto 0;
+  position: relative;
+}
+
+/* Сам хедер */
+.headerBar {
+  height: 65px;
+  border-radius: 15px;
+  background: var(--header-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 0 24px;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 0;
+}
+
+/* ===== Навигация слева: просто слова ===== */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex: 1;
+  height: 39px;
+}
+
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  background: transparent;   /* без белого прямоугольника */
+  border: none;
+  padding: 0;
+  text-decoration: none;
+  color: #111827;
+  transition: color .15s, opacity .15s;
+}
+
+.navLink:hover {
+  color: var(--color-primary);
+  opacity: 0.85;
+}
+
+.navLink.active {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* ===== Логотип по центру, новый стиль ===== */
+.logo {
+  font-family: var(--font-main);
+  font-weight: 800;
+  font-size: 26px;
+  letter-spacing: -0.5px;
+  text-decoration: none;
+  color: #111827;
+  white-space: nowrap;
+  padding: 6px 16px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.logo:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* ===== Правая часть — кнопка ===== */
+.headerRight {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+/* Если Button не принимает className — оберните его так:
+   <div className={styles.headerRight}>
+     <span className={styles.signupWrap}><Button .../></span>
+   </div>
+   и стилизуйте .signupWrap через & > button. */
+
+.navLink:focus-visible,
+.logo:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .navPanel { min-height: auto; padding: 0 16px; }
+  .headerBar {
+    position: static;
+    height: auto;
+    min-height: 56px;
+    padding: 8px 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .menu { display: none; }
+  .logo { font-size: 20px; padding: 4px 10px; }
+}

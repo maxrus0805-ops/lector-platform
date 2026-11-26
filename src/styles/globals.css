@@ -1,0 +1,4 @@
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font-main); color: var(--color-text); background: var(--color-bg); }
+a { color: inherit; }
+.container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 16px; }
