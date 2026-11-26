@@ -13,11 +13,11 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/Karimsfiles2/edu-platform.git
+   git clone https://github.com/maxrus0805-ops/lector-platform.git
    ```
 2. Перейдите в папку проекта:
    ```bash
-   cd edu-platform
+   cd lector-platform
    ```
 3. Установите зависимости:
    ```bash
