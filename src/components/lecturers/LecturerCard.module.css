@@ -139,3 +139,7 @@
   .topSection { flex-direction: column; gap: 16px; }
   .photoColumn { width: 100%; max-width: 180px; }
 }
+.cardWrapper > button {
+  align-self: flex-start;
+  margin-top: 8px;
+}
